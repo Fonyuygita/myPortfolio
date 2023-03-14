@@ -1,0 +1,13 @@
+.darkMode{
+    background-color: #222;
+    color: white;
+}
+input{
+    background-color: #333;
+    color: white;
+}
+
+textarea{
+    border-color: gray;
+    background-color: #333;
+}

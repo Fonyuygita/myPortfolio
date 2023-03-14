@@ -1,6 +1,6 @@
 import React from "react";
 import "./intro.css";
-import me from "../../asset/jude.png";
+import me from "../../asset/traf.png"
 import svg1 from "../../asset/toggle-on-svgrepo-com.svg";
 import svg2 from "../../asset/icons8-mouse-scrolling-50.png";
 
