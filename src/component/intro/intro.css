@@ -2,6 +2,7 @@
 display: flex;
 height: 100vh;
 
+
 }
 
 .iLeft{
@@ -62,6 +63,7 @@ align-items: center;
 .i-title-wrapper{
     height: 100%;
     animation: move 10s ease-in-out infinite alternate;
+
 }
 
 @keyframes move {
@@ -117,3 +119,52 @@ align-items: center;
     color: rgb(244, 228, 228);
     
 }
+
+
+
+/* responsive css code here */
+/* write code here */
+
+@media screen and (max-width:480px){
+   
+
+    .i{
+
+        flex-direction: column;
+    }
+
+    .i-left-wrapper{
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+    .i-desc{
+        display: none;
+    }
+    .i-bg{
+        clip-path: polygon(100% 0%, 100% 56%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        background-color: #59b256;
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    
+.i-img{
+    width: 70%;
+    height: max-content;
+    margin: 0 auto;
+    object-fit: cover;
+    position: absolute;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+}
+
+/* end of responsive design code */

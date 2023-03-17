@@ -1,5 +1,5 @@
 import React from 'react'
-import  {BsLinkedin, BsTwitter, BsWhatsapp,  BsFacebook } from 'react-icons/bs'
+import  {BsLinkedin, BsTwitter, BsWhatsapp,  BsFacebook, BsGithub } from 'react-icons/bs'
 import "./About.css"
 import  gita from "../../asset/gita.jpg"
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
 
    </p>
 <div className="socials">
-<a href=""><BsFacebook  className='icon' /></a>
+<a href=""><BsGithub  className='icon' /></a>
 <a href=""><BsTwitter  className='icon' /></a>
 <a href=""><BsWhatsapp  className='icon' /></a>
 <a href=""><BsLinkedin  className='icon' /></a>

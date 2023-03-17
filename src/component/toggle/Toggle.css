@@ -15,6 +15,7 @@
     cursor: pointer;
     gap: 12px;
     background-color: #333;
+    overflow: hidden;
 
     
 }
