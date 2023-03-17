@@ -77,3 +77,90 @@ hr{
     padding: 16px;
     cursor: pointer;
 }
+
+
+/* responsiveness of the about section  */
+@media screen and (max-width:480px){
+
+    .a{
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    
+    .a-left{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    
+.a-card.bg{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    background-color:#59b256;
+    height: 600px;
+}
+.a-card{
+    margin-top: 3rem;
+    height: 30vh;
+    width: 80vw;
+}
+.a-img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+    width: 70%;
+    height: 300px;
+ 
+}
+
+.a-card.bg{
+    position: absolute;
+    top: -59px;
+    left: 50px;
+    background-color:#59b256;
+    height: 300px;
+    width: 65%;
+    bottom: 5rem;
+}
+.a-right{
+    margin-top: 4rem;
+    border-left: 2px solid #59b256;
+    border-bottom: 2px solid #59b256;
+
+
+
+}
+.a-title{
+    text-align: center;
+    margin-left: 2rem;
+    font-size: 43px;
+
+}
+.a-sub{
+    font-size: 20px;
+}
+.socials{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+ .socials .icon{
+    width: 50px;
+    height: 50px;
+ }   
+    
+}
+
+
+
+
