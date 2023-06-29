@@ -1,37 +1,43 @@
-import React from 'react'
-import  {BsLinkedin, BsTwitter, BsWhatsapp,  BsFacebook, BsGithub } from 'react-icons/bs'
-import "./About.css"
-import  gita from "../../asset/gita.jpg"
+import "./About.css";
+import Award from "../../images/award.png";
+
 const About = () => {
   return (
-   <div className="a">
-   <div className="a-left">
-   <div className="a-card bg"></div>
-   <div className="a-card">
-   <img src={gita} alt="" className='a-img' />
-   </div>
-   </div>
-   <div className="a-right">
-   <h1 className="a-title">About Me</h1>
-   <hr/>
-   <p className="a-sub">{"It's a long established fact that a reader will be distracted by the readable content "}</p>
+    <div className="a">
+      <div className="a-left">
+        <div className="a-card bg"></div>
+        <div className="a-card">
+          <img
+            src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""
+            className="a-img"
+          />
+        </div>
+      </div>
+      <div className="a-right">
+        <h1 className="a-title">About Me</h1>
+        <p className="a-sub">
+          It is a long established fact that a reader will be distracted by the
+          readable content.
+        </p>
+        <p className="a-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          
+        </p>
+        <div className="a-award">
+          <img src={Award} alt="" className="a-award-img" />
+          <div className="a-award-texts">
+            <h4 className="a-award-title">International Design Awards 2021</h4>
+            <p className="a-award-desc">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
+              and fugit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-   <p className="a-desc">
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo numquam fugiat, vitae, ab, rem ratione iste eaque beatae earum nesciunt quod deserunt quas id! Facere, laborum sequi! Voluptatum nihil neque ex expedita odit quae? Debitis animi incidunt in similique temporibus obcaecati iste reiciendis tempore ab iure, assumenda laboriosam numquam sapiente accusantium voluptas quod dignissimos architecto quam voluptatum repellendus! Esse ea ratione facilis illum, at repellat ut inventore magni in?
-
-   </p>
-<div className="socials">
-<a href=""><BsGithub  className='icon' /></a>
-<a href=""><BsTwitter  className='icon' /></a>
-<a href=""><BsWhatsapp  className='icon' /></a>
-<a href=""><BsLinkedin  className='icon' /></a>
-
-
-</div>
-
-   </div>
-   </div>
-  )
-}
-
-export default About
+export default About;

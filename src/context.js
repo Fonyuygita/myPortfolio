@@ -1,30 +1,22 @@
-import { children, createContext, useEffect, useReducer } from "react";
-import { useState } from "react";
+import { createContext, useReducer } from "react";
 
-export const ThemeContext=createContext();
+export const ThemeContext = createContext();
 
-export const DarkModeProvider=({children})=>{
-// create a state for 
+const INITIAL_STATE = { darkMode: false };
 
-const [dark, setDark]=useState(JSON.parse(localStorage.getItem("dark")) || null);
+const themeReducer = (state, action) => {
+  switch (action.type) {
+    case "TOGGLE":
+      return { darkMode: !state.darkMode };
+    default:
+      return state;
+  }
+};
 
+export const ThemeProvider = (props) => {
+  const [state, dispatch] = useReducer(themeReducer, INITIAL_STATE);
 
-
-    // create a toggle function
-
-    const toggle=()=>{
-        setDark(!dark);
-    }
-
-    useEffect(()=>{
-
-JSON.stringify(localStorage.setItem("dark", dark));
-
-    }, [dark])
-
-return (
-
-    <ThemeContext.Provider value={{dark, toggle}} >{children}</ThemeContext.Provider>
-)
-    
-}
+  return (
+    <ThemeContext.Provider value={{state, dispatch}}>{props.children}</ThemeContext.Provider>
+  );
+};

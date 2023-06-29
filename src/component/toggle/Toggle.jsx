@@ -1,30 +1,26 @@
-import React, { useContext } from 'react'
-import { BsFillSunFill } from 'react-icons/bs';
-import { CiDark } from 'react-icons/ci';
-import { ThemeContext } from '../../context';
-
 import "./Toggle.css";
+import Sun from "../../images/sun.png";
+import Moon from "../../images/moon.png";
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 const Toggle = () => {
-const {dark, toggle}=useContext(ThemeContext);
+  const theme = useContext(ThemeContext);
 
-
-
+  const handleClick = () => {
+    theme.dispatch({ type: "TOGGLE" });
+  };
   return (
     <div className="t">
-    
-    <BsFillSunFill size={300}  color="#fff" />
-    <CiDark size={300}  />
-    
-   
-    <div className="button" style={{right: dark && "34px"}} onClick={toggle}></div>
-    
-
-
-
-    
+      <img src={Sun} alt="" className="t-icon" />
+      <img src={Moon} alt="" className="t-icon" />
+      <div
+        className="t-button"
+        onClick={handleClick}
+        style={{ left: theme.state.darkMode ? 0 : 25 }}
+      ></div>
     </div>
-  )
-}
+  );
+};
 
-export default Toggle
+export default Toggle;
