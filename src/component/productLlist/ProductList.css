@@ -27,9 +27,17 @@
   }
   
   @media screen and (max-width: 480px) {
-    .pl {
-      padding: 10px;
+   
+    .pl-list {
+    
+      display: flex;
+width: 100%;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 2rem;
+gap: 1rem;    
     }
+
   h1{
     margin-top: 4rem;
   }
